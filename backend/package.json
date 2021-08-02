@@ -9,6 +9,7 @@
   "dependencies": {
     "@google-cloud/aiplatform": "^1.9.1",
     "@google-cloud/automl": "^2.4.3",
+	"@google-cloud/pubsub": "^2.16.1"
     "axios": "^0.21.1",
     "cors": "^2.8.5",
     "express": "^4.17.1"

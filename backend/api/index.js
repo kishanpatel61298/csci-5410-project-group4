@@ -4,7 +4,7 @@ const express = require('express');
 const router = express.Router();
 
 const classifyRecipeRoutes = require('./routes/ClassifyRecipeRoutes');
-
+const pubsub = require('./routes/PubSub');
 //Main API Endpoint
 router.get('/', (req,res) => {
     return res.status(200).json({
@@ -15,6 +15,7 @@ router.get('/', (req,res) => {
 
 // Add all other routes here.
 router.use('/classification', classifyRecipeRoutes)
+router.use('/pubsub', pubsub)
 
 //404 Error Handling
 router.use(function(req, res, next) {
